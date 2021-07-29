@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/ksmacleod99/vigilant-adventure/tree/main/single-price-grid-component-master)
-- Live Site URL: [Live Demo](https://jovial-wescoff-1d5f97.netlify.app/single-price-grid-component-master/index.html)
+- Live Site URL: [Live Demo](https://vigilant-adventure-1d5f97.netlify.app/single-price-grid-component-master/index.html)
 
 ## My process
 
