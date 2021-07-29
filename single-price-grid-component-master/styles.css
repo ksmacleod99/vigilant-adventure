@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: karla;
+    font-size: 16px;
+    font-weight:400;
+    background-color:hsl(204, 43%, 93%);
+    color: hsl(204, 43%, 93%);
+}
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+h2 {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+button {
+    background-color:hsl(71, 73%, 54%);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    min-width: 100%;
+    font-weight:700;
+    filter: drop-shadow(10px 10px 25px grey);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+ 
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+.container {
+    border-radius: 10px;
+    background: #fff;
+    filter: drop-shadow(10px 10px 25px hsl(218, 22%, 67%));
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper > * {
+    flex: 1 100%
+}
+
+.info {
+    background-color: #fff;
+    order: 1;
+}
+
+.info p{
+    color: hsl(218, 22%, 67%);
+}
+
+.cta {
+    background-color: hsl(179, 62%, 43%);
+    order: 2;
+}
+
+
+.priceWrapper {
+    display: flex;
+    align-items: center;
+}
+.price {
+    font-weight: 700;
+    font-size:40px;
+}
+
+.perMonth {
+  padding: 15px
+}
+
+.why {
+    background-color: #4abebd;
+    order:3;
+}
+
+.inside {
+    padding: 25px;
+}
+
+.subtitle {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media all and (min-width: 800px) {
+    .container {
+        width: 800px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .cta {
+       flex-basis:50%;
+       border-radius: 0% 0% 0% 3%;
+    }
+    .why {
+        flex-basis:50%;
+        border-radius: 0% 0% 3% 0%;
+    }
+    .inside {
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 799px){
+    .container {
+        margin: 10vw;
+    }
+    .inside {
+       margin: 3px;
+    }
+}
