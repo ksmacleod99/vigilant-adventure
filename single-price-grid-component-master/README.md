@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/ksmacleod99/vigilant-adventure/tree/main/single-price-grid-component-master)
+- Live Site URL: [Live Demo](https://jovial-wescoff-1d5f97.netlify.app/single-price-grid-component-master/index.html)
 
 ## My process
 
