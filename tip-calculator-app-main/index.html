@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+    <div><h3>SPLITTER</h3></div>
+    <div class="container">
+      <form name="tip">
+      <div class="wrapper">
+       
+         <div class="inputs">
+            <div class="box">
+              <label for="bill">Bill</label>
+              <br>
+              <i class="fas fa-dollar-sign icon"></i>
+              <input type="text" id="bill" name="bill" placeholder="0" onkeyup="validate(this)">
+              <p class="hidden error" id="billError">Enter only numbers</p>
+            </div>
+
+            <div class="box">
+              <p>Select Tip %</p>
+              <div class="grid">
+                <button class="tipAmt">5%</button>
+                <button class="tipAmt">10%</button>
+                <button class="tipAmt">15%</button>
+                <button class="tipAmt">25%</button>
+                <button class="tipAmt">50%</button>
+                <button class="custom">Custom</button>
+              </div>
+            </div>
+
+            <div class="box">
+              <label for="people">Number of People</label>
+              <br>
+              <i class="fas fa-user icon"></i>
+              <input type="text" id="people" name="people" placeholder="0">
+              <p class="hidden error" id="peopleError">Enter only numbers</p>
+            </div>
+        </div>
+ 
+        <div class="outputs">
+          <div class="resultsWrapper">
+            <div class="tipLabel">
+              <p>Tip Amount<br> 
+                <span class="perPerson">/ person</span>
+              </p>
+            </div>
+            <div class="tipAmt">
+              <p class="results">$0.00</p>
+            </div>
+            <div class="totalLabel">
+              <p>Total<br> 
+                <span class="perPerson">/ person</span>
+              </p>
+            </div>
+            <div class="totalAmt">
+              <p class="results">$0.00</p>
+            </div>
+          </div>
+
+          <input type="reset" class="reset"></input>
+        </div>
+     
+      </div>
+    </form>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/3b1f66acfd.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script> 
+</body>
+</html>

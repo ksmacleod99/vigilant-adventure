@@ -1,0 +1,217 @@
+html, body {
+    margin: 0;
+    padding: 0; 
+    color: hsl(186, 14%, 43%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: hsl(185, 41%, 84%);
+}
+
+button {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 3px;
+}
+
+button:focus, button:active{
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: right;
+    width: 90%
+}
+
+input:focus {
+    outline: none; 
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.container {
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    width: 100vw;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.inputs {
+    order:1;
+    padding: 20px;
+}
+
+.inputs i {
+    position: absolute;
+    font-size: 24px;
+    color: hsl(184, 14%, 56%);
+}
+
+.box {
+    margin: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.tipAmt {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    min-width: 110px;
+}
+
+.custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    min-width: 110px;
+}
+
+.outputs {
+    order: 2;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.resultsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+    padding: 20px;
+}
+
+.tipLabel{
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+}
+
+.totalLabel{
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: center;
+}
+
+.tipAmt {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: center;
+}
+
+.totalAmt {
+   grid-area: 2 / 2 / 3 / 3;
+   align-self: center;
+}
+
+.results {
+    color: hsl(172, 67%, 45%);
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 0;
+}
+
+.perPerson {
+    color: hsl(186, 14%, 43%);
+    font-size: 16px;
+}
+
+.reset {
+    width: 100%;
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    text-transform:uppercase;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
+.error{
+    color: #cc0000;
+}
+
+.hidden {
+    display:none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(183, 100%, 15%); }
+
+@media only screen and (max-width: 600px) {
+    .container {
+       width:100%;
+       margin: 0;
+       padding: 0;
+    }
+    .wrapper {
+        justify-content: space-evenly;
+    }
+    .inputs {
+        order:1;
+        padding: 20px;
+        width: 100%
+    }
+    .outputs {
+        order: 2;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .resultsWrapper {
+        padding: 10px;
+    }
+    .results {
+        font-size: 25px;
+    }
+    .resultsWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px; 
+        padding: 5px;
+    }
+    .tipAmt, .custom {
+        min-width: 140px;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width:70%;
+        position:absolute;
+        top: 25%;
+        left: 10%;
+    }
+    .inputs {
+        width:45%;
+    }
+    .outputs {
+        width: 45%;
+        height: 100%;
+    }
+  }
