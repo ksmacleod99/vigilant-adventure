@@ -5,6 +5,10 @@
 
 
 //click handler for tip amt buttons
+//get ID
+//set ID as variable
+//button stays lit
+//
 
 //Anyone paying with a credit card should tip on their portion of the total bill; https://www.realsimple.com/work-life/money/money-etiquette/tipping-etiquette-guide
 
