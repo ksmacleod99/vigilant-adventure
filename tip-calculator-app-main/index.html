@@ -21,31 +21,30 @@
        
          <div class="inputs">
             <div class="box">
-              <label for="bill">Bill</label>
+              <label for="bill">Bill <span class="error hidden" id="billError">Can't be zero</span></label>
               <br>
               <i class="fas fa-dollar-sign icon"></i>
-              <input type="text" id="bill" name="bill" placeholder="0" onkeyup="validate(this)">
-              <p class="hidden error" id="billError">Enter only numbers</p>
+              <input type="text" id="bill" name="bill" placeholder="0" onkeyup="validateBill()">
             </div>
 
             <div class="box">
               <p>Select Tip %</p>
               <div class="grid">
-                <button class="tipAmt" id="5">5%</button>
-                <button class="tipAmt" id="10">10%</button>
-                <button class="tipAmt" id="15">15%</button>
-                <button class="tipAmt" id="25">25%</button>
-                <button class="tipAmt" id="50">50%</button>
-                <button class="custom">Custom</button>
+                <button type="button" class="tipAmt" id="5" onClick="getTip(.05)">5%</button>
+                <button type="button" class="tipAmt" id="10" onClick="getTip(.1)">10%</button>
+                <button type="button" class="tipAmt" id="15" onClick="getTip(.15)">15%</button>
+                <button type="button" class="tipAmt" id="25" onClick="getTip(.25)">25%</button>
+                <button type="button" class="tipAmt" id="50" onClick="getTip(.5)"">50%</button>
+                <input class="custom" id="custom" placeholder="Custom" pattern="\d{1,2}$"></input>
+                <label for="custom"><span class="error hidden" id="customError">Can't be zero</span></label>
               </div>
-            </div>
+            </div> 
 
             <div class="box">
-              <label for="people">Number of People</label>
+              <label for="people">Number of People <span class="error hidden" id="peopleError">Can't be zero</span></label>
               <br>
               <i class="fas fa-user icon"></i>
-              <input type="text" id="people" name="people" placeholder="0">
-              <p class="hidden error" id="peopleError">Enter only numbers</p>
+              <input type="text" id="people" name="people" placeholder="0" onkeyup="validatePeeps()">
             </div>
         </div>
  

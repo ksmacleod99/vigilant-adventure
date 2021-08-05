@@ -4,7 +4,7 @@ html, body {
     color: hsl(186, 14%, 43%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     background-color: hsl(185, 41%, 84%);
 }
 
@@ -38,7 +38,11 @@ input {
 
 input:focus {
     outline: none; 
-    border: 1px solid hsl(183, 100%, 15%);
+    border: 3px solid hsl(172, 67%, 45%);
+}
+
+input:invalid {
+    border: 3px solid #cc0000;
 }
 
 footer {
@@ -70,7 +74,7 @@ footer {
 }
 
 .box {
-    margin: 10px;
+    padding-top: 20px;
 }
 
 .icon {
@@ -86,8 +90,9 @@ footer {
 
 .custom {
     background-color: hsl(189, 41%, 97%);
-    color: hsl(186, 14%, 43%);
-    min-width: 110px;
+    border: 0;
+    padding:10px;
+    max-width: 95px;
 }
 
 .outputs {
@@ -151,8 +156,9 @@ footer {
     text-align: center;
 }
 
-.error{
+.error {
     color: #cc0000;
+    text-align: right;
 }
 
 .hidden {
