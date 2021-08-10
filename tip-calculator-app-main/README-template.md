@@ -65,6 +65,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### What I learned
 
 - I can do client-side validation in vanilla HTML! To some extent.
+- there is a `test()` method for regex in Javascript! I didn't use this. 
+- checking one function to see if it returned 'true' before running another.
 
 ### Continued development
 
