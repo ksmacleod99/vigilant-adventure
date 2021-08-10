@@ -30,12 +30,12 @@
             <div class="box">
               <p>Select Tip %</p>
               <div class="grid">
-                <button type="button" class="tipAmt" id="05" onClick="getTip(.05)">5%</button>
-                <button type="button" class="tipAmt" id="10" onClick="getTip(.1)">10%</button>
-                <button type="button" class="tipAmt" id="15" onClick="getTip(.15)">15%</button>
-                <button type="button" class="tipAmt" id="25" onClick="getTip(.25)">25%</button>
-                <button type="button" class="tipAmt" id="50" onClick="getTip(.5)">50%</button>
-                <input class="custom" id="custom" placeholder="Custom" pattern="\d{1,2}$"></input>
+                <button type="button" class="tipAmt" id="05" onClick="getTip(05)">5%</button>
+                <button type="button" class="tipAmt" id="10" onClick="getTip(10)">10%</button>
+                <button type="button" class="tipAmt" id="15" onClick="getTip(15)">15%</button>
+                <button type="button" class="tipAmt" id="25" onClick="getTip(25)">25%</button>
+                <button type="button" class="tipAmt" id="50" onClick="getTip(50)">50%</button>
+                <input class="custom" id="custom" placeholder="Custom" onkeyup="getCustom()"></input>
                 <label for="custom"><span class="error hidden" id="customError">Can't be zero</span></label>
               </div>
             </div> 
