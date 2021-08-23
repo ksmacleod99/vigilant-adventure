@@ -227,10 +227,10 @@ footer {
 
 @media (min-width: 900px) {
     .container {
-        width:70%;
+        width:1000px;
         position:absolute;
         top: 25%;
-        left: 10%;
+        left: 25%;
     }
     .inputs {
         width:45%;

@@ -70,7 +70,7 @@ This design is simple enough, but complex enough, that I might attempt to re-cre
 
 ## Author
 
-- Frontend Mentor - [@yksmacleod99](https://www.frontendmentor.io/profile/ksmacleod99)
+- Frontend Mentor - [@ksmacleod99](https://www.frontendmentor.io/profile/ksmacleod99)
 - Twitter - [@ksmacleod99](https://www.twitter.com/ksmacleod99)
 
 
