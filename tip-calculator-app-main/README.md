@@ -51,24 +51,25 @@ Users should be able to:
 
 - I can do client-side validation in vanilla HTML! To some extent.
 - There is a `test()` method for regex in Javascript! I didn't use this. 
-- Thecking one function to see if it returned 'true' before running another.
+- Checking one function to see if it returned 'true' before running another.
 - The SVGs are in the `/images` directory and I didn't need to import Font Awesome...
 
 ### Continued development
 
 I am stuck on the button styling. I could not find good examples of removing the "active" class from buttons that were previously selected, on select of a new button. 
 
-I also haven't been looked into / put effort into cents or descimal places after dollar amounts that do not have cents (e.g. $5 vs $5.00). 
+I also haven't been looked into / put effort into cents or decimal places after dollar amounts that do not have cents (e.g. $5 vs $5.00). 
 
-Updates should also be made for accessability. 
+Updates should also be made for accessibility. 
 
 ### Useful resources
 
 - [SO - Regex for Prices?](https://stackoverflow.com/questions/1547574/regex-for-prices) - I hate regex, but needed it for validations. This helped. 
-- [Tipping Ettiquite Guide](https://www.realsimple.com/work-life/money/money-etiquette/tipping-etiquette-guide) - Tipping ettiquite guide. I used this to make sure I was calculating tips correctly (in the social sense)
+- [Tipping Etiquette Guide](https://www.realsimple.com/work-life/money/money-etiquette/tipping-etiquette-guide) - Tipping etiquette guide. I used this to make sure I was calculating tips correctly (in the social sense)
 - [MDN - classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Also learned some cool tricks here.
 
 ## Author
 
 - Frontend Mentor - [@ksmacleod99](https://www.frontendmentor.io/profile/ksmacleod99)
 - Twitter - [@ksmacleod99](https://www.twitter.com/ksmacleod99)
+
