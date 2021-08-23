@@ -24,11 +24,6 @@ button:active, .active{
     min-width: 110px;
 }
 
-button:disabled {
-    background-color: hsl(184, 14%, 56%);
-    color: hsl(186, 14%, 43%);
-}
-
 input {
     background-color: hsl(189, 41%, 97%);
     font-size: 24px;
@@ -42,13 +37,9 @@ input {
     width: 90%
 }
 
-input:active {
+input:active, input:focus {
     outline: none; 
     border: 3px solid hsl(172, 67%, 45%);
-}
-
-input:invalid {
-    border: 3px solid #cc0000;
 }
 
 footer {
@@ -67,6 +58,14 @@ footer {
     display: flex;
     flex-flow: row wrap;
 }
+
+.header {
+    margin:auto;
+    padding: 0;
+    letter-spacing: 1rem;
+    width: 125px;
+    word-wrap: break-word;
+} 
 
 .inputs {
     order:1;
@@ -88,7 +87,7 @@ footer {
     min-width: 40px;
 }
 
-.tipAmt {
+.tipBtn {
     background-color: hsl(183, 100%, 15%);
     color: white;
     min-width: 110px;
@@ -162,6 +161,16 @@ footer {
     text-align: center;
 }
 
+.disabled {
+    background-color: #0d686d;
+    color: #045b62;
+    width: 100%;
+    text-transform:uppercase;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+
 .error {
     color: #cc0000;
     text-align: right;
@@ -207,10 +216,14 @@ footer {
         grid-row-gap: 10px; 
         padding: 5px;
     }
-    .tipAmt, .custom {
-        min-width: 140px;
+    .tipBtn{
+        min-width: 110px;
+    }
+    footer {
+        position:relative;
     }
 }
+
 
 @media (min-width: 900px) {
     .container {
