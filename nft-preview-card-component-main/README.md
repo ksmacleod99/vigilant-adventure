@@ -46,8 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Just practice. 
-Though adding an image overlay on hover is a new one for me. 
+Just practice. Though adding an image overlay on hover is a new one for me. It also took me _way too long_ to remember that you can't `hover` on mobile, so of course all my hover stlyes don't work. _:sigh:_
 
 ### Useful resources
 
