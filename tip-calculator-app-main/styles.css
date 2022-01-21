@@ -1,10 +1,13 @@
-html, body {
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+} 
+body {
     margin: 0;
     padding: 0; 
     color: hsl(186, 14%, 43%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    font-size: 16px;
     background-color: hsl(185, 41%, 84%);
 }
 
@@ -30,7 +33,7 @@ input {
     font-weight: 700;
     font-family: 'Space Mono', monospace;
     color: hsl(183, 100%, 15%);
-    border: 0;
+    border: 3px solid transparent;
     border-radius: 5px;
     padding: 5px;
     text-align: right;
@@ -41,17 +44,10 @@ input:active, input:focus {
     outline: none; 
     border: 3px solid hsl(172, 67%, 45%);
 }
-
-footer {
-    position: absolute;
-    bottom: 0;
-}
-
 .container {
     border-radius: 30px;
     padding: 20px;
     background-color: white;
-    width: 100vw;
 }
 
 .wrapper {
@@ -62,7 +58,7 @@ footer {
 .header {
     margin:auto;
     padding: 0;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
     width: 125px;
     word-wrap: break-word;
 } 
@@ -90,14 +86,6 @@ footer {
 .tipBtn {
     background-color: hsl(183, 100%, 15%);
     color: white;
-    min-width: 110px;
-}
-
-.custom {
-    background-color: hsl(189, 41%, 97%);
-    border: 0;
-    padding:10px;
-    max-width: 95px;
 }
 
 .outputs {
@@ -183,11 +171,20 @@ footer {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(183, 100%, 15%); }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
+    .grid {
+        width: auto;
+    }
     .container {
        width:100%;
        margin: 0;
        padding: 0;
+    }
+    button {
+        padding: 8px;
+    }
+    .tipBtn {
+        max-width: 80px;
     }
     .wrapper {
         justify-content: space-evenly;
@@ -217,20 +214,59 @@ footer {
         padding: 5px;
     }
     .tipBtn{
-        min-width: 110px;
+        min-width: 80px;
     }
     footer {
         position:relative;
     }
 }
 
+@media only screen and (min-width:321px) and (max-width:899px) {
+    button {
+        padding: 8px;
+    }
+    .tipBtn {
+        min-width: 80px;
+    }
+    .custom {
+        padding:15px 10px 11px 5px;
+        max-width:70px;
+        font-size: 1em;
+    }
+    .grid {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .outputs {
+        order: 2;
+        margin: 0 auto;
+        padding: 25px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        position:relative;
+    }
+}
 
 @media (min-width: 900px) {
+    button {
+        padding: 10px;
+    }
     .container {
-        width:1000px;
-        position:absolute;
-        top: 25%;
-        left: 25%;
+        margin: auto;
+        width:80%;
+    }
+    .tipBtn {
+        min-width: 110px;
+    }
+    .custom {
+        padding:10px;
+        max-width: 90px;
+    }
+    .grid {
+        width: 70%;
     }
     .inputs {
         width:45%;
@@ -238,5 +274,8 @@ footer {
     .outputs {
         width: 45%;
         height: 100%;
+    }
+    footer {
+        position:absolute;
     }
   }

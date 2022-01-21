@@ -34,14 +34,41 @@ function validateBill() {
     }
 }
 
-function changeColor(amt) {
+
+/* get all the button elements */
+/* The idea is. When we click on a single button element,
+We will loop through all the buttons and we will remove the 
+selected class on them, applying the selected class only
+to the single button that we pressed */
+const buttons = document.querySelectorAll("button");
+
+/* When a button gets click, the "selected" class gets applied */
+const handleClickEvent = (event) => event.target.classList.add("active");
+
+/* Loop through the buttons then remove the "selected" class on them 
+const handleResetButtonClass = () => {
+ buttons.forEach(button => button.classList.remove("active"));
+} */
+
+/* Add a event listener to every button */
+buttons.forEach(button => button.addEventListener("click", (event) =>{
+ // call the reset function
+	handleResetButtonClass(); 
+  
+  // Apply the class to the button
+   handleClickEvent(event);
+   console.log("click")
+}))
+
+
+/*function changeColor(amt) {
     var selection = document.getElementById(amt);
     selection.classList.replace('tipBtn','active'); 
-}
+}*/
 
 //Get tip amount from buttons
 function getTip(amt){
-    changeColor(amt);
+    //changeColor(amt);
     percent = Number((amt/100).toFixed(2)); //turn entry into a percent
     calculate(); 
 
