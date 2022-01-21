@@ -22,7 +22,7 @@ h1 {
     color: white;
 }
 
-a:link {
+a:link, a:visited {
     color: white;
     text-decoration:none;
 }
@@ -40,8 +40,6 @@ a:hover {
 }
 
 .container {
-    height: 100%;
-    width: 100%;
     margin:0;
     padding: 2em;
 }
@@ -125,3 +123,17 @@ a:hover {
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (min-width: 992px) {
+    .container {
+        height: 100%;
+        width: 100%;
+     }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+     /**/
+     }
+}
