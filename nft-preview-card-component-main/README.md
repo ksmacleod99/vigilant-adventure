@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](.docs/mobile.png)
-![](.docs/web.png)
+![](./docs/mobile.png)
+![](./docs/web.png)
 
 
 ### Links
