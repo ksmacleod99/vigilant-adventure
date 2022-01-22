@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color:hsl(226, 43%, 10%);
+    color: white;
+    font-weight:500;
+}
+
+h1{
+    font-weight: 300;
+    margin:0 auto 35px auto;
+}
+
+a{
+    text-decoration: none;
+    color:hsl(235, 45%, 61%)
+}
+.active, a:hover, a:active {
+    color: white !important;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.grid {
+    margin: 0 auto;
+    display: grid;
+    max-width: 60%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 40% 5%;
+}
+
+.report {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.profile {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    margin: 0;
+    padding: 25px;
+}
+.avatar {
+    border: 3px solid white;
+    border-radius: 50%;
+    height:80px;
+    width: 80px;
+    margin: 10px auto 20px auto;
+}
+
+.dateFilters{
+    font-size: 18px;
+    color: hsl(235, 45%, 61%);
+    padding: 20px;
+}
+
+.dateFilters > ul {
+    font-weight: 300;
+    list-style: none;
+    padding-left:0;
+}
+
+li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 15px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.tab {
+    height: 50px;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.float-right{
+    float: right;                            
+}
+
+.wrapper {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+}
+
+.title {
+    float: left
+}
+
+.inner {
+    margin:0;
+    padding:10px;
+}
+
+.card:hover:not(:first-child) {
+    background-color: hsl(235, 45%, 61%);
+}
+
+.smaller {
+    font-size:14px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color:hsl(236, 100%, 87%)
+}
+
+.time {
+    font-size: 40px;
+    font-weight:300;
+    margin:0;
+}
+
+.lastWeek {
+    font-size: 12px;
+    color: hsl(235, 45%, 61%);
+}
+
+
+.work{
+    background-color:hsl(15, 100%, 70%);
+}
+.play {
+    background-color:hsl(195, 74%, 62%);
+}
+.study {
+    background-color:hsl(348, 100%, 68%);
+}
+.social {
+    background-color:hsl(264, 64%, 52%);
+}
+.exercise {
+    background-color:hsl(145, 58%, 55%);
+}
+.selfCare {
+    background-color:hsl(43, 84%, 65%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    font-weight: 300;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

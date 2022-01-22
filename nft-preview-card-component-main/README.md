@@ -48,6 +48,8 @@ Users should be able to:
 
 Just practice. Though adding an image overlay on hover is a new one for me. It also took me _way too long_ to remember that you can't `hover` on mobile, so of course all my hover stlyes don't work. _:sigh:_
 
+to try: https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+
 ### Useful resources
 
 - [W3 Schools - How To Create Image Hover Overlay](https://www.w3schools.com/howto/howto_css_image_overlay.asp) - good enough resource to figure out how to best make the image overlay on hover happen.

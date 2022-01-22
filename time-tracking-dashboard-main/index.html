@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="data.json"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body onload="daily();">
+  <div class="container">
+    <div class="grid">
+
+      <div class="report">
+        <div class="card">
+          <div class="profile">
+            <img src="./images/image-jeremy.png" class="avatar">
+            <p class="smaller">Report for</p>
+            <h1>
+              Jeremy Robson
+            </h1>
+          </div>
+          <div class="dateFilters">
+            <ul>
+              <li id="daily" onClick="daily()"><a href="#">Daily</a></li>
+              <li id="weekly" onClick="weekly()"><a href="#">Weekly</a></li>
+              <li id="monthly" onClick="monthly()"><a href="#">Monthly</a></li>
+            </ul>
+          </div>
+        </div>
+       </div>
+
+      <div id="work" class="card">
+        <div class="tab work">
+          <img src="./images/icon-work.svg" class="float-right">
+        </div>
+        <div class="inner">
+          <div class="wrapper">
+            <div>
+              <p>Work</p>
+            </div>
+            <div>
+              <a href="#"><img src="./images/icon-ellipsis.svg" class="float-right"></a>
+            </div>
+          </div>
+          <p class="time"><span id="workCurrent"></span>hrs</p>
+          <p class="smaller"><span class="last"></span> - <span id="workPrevious"></span>hrs</p>       
+        </div>
+      </div>
+
+
+      <div id="play" class="card">
+        <div class="tab play">
+          <img src="./images/icon-play.svg" class="float-right">
+        </div>
+        <div class="inner">
+          <div class="wrapper">
+            <div>
+              <p>Play</p>
+            </div>
+            <div>
+              <a href="#"><img src="./images/icon-ellipsis.svg" class="float-right"></a>
+            </div>
+          </div>
+          <p class="time"><span id="playCurrent"></span>hrs</p>
+          <p class="smaller"><span class="last"></span> - <span id="playPrevious"></span>hrs</p>       
+        </div>
+    </div>
+
+      <div id="study" class="card">
+        <div class="tab study">
+          <img src="./images/icon-study.svg" class="float-right">
+        </div>
+        <div class="inner">
+          <div class="wrapper">
+            <div>
+              <p>Study</p>
+            </div>
+            <div>
+              <a href="#"><img src="./images/icon-ellipsis.svg" class="float-right"></a>
+            </div>
+          </div>
+          <p class="time"><span id="studyCurrent"></span>hrs</p>
+          <p class="smaller"><span class="last"></span> - <span id="studyPrevious"></span>hrs</p>       
+        </div>
+      </div>
+
+      <div id="exercise" class="card">
+
+        <div class="tab exercise">
+          <img src="./images/icon-exercise.svg" class="float-right">
+        </div>
+        <div class="inner">
+          <div class="wrapper">
+            <div>
+              <p>Exercise</p>
+            </div>
+            <div>
+              <a href="#"><img src="./images/icon-ellipsis.svg" class="float-right"></a>
+            </div>
+          </div>
+          <p class="time"><span id="exerciseCurrent"></span>hrs</p>
+          <p class="smaller"><span class="last"></span> - <span id="exercisePrevious"></span>hrs</p>       
+        </div>
+      </div>
+
+      <div id="social" class="card">
+        <div class="tab social">
+          <img src="./images/icon-social.svg" class="float-right">
+        </div>
+        <div class="inner">
+          <div class="wrapper">
+            <div>
+              <p>Social</p>
+            </div>
+            <div>
+              <a href="#"><img src="./images/icon-ellipsis.svg" class="float-right"></a>
+            </div>
+          </div>
+          <p class="time"><span id="socialCurrent"></span>hrs</p>
+          <p class="smaller"><span class="last"></span> - <span id="socialPrevious"></span>hrs</p>       
+        </div>
+      </div>
+
+      <div id="selfCare" class="card">
+        <div class="tab selfCare">
+          <img src="./images/icon-self-care.svg" class="float-right">
+        </div>
+        <div class="inner">
+          <div class="wrapper">
+            <div>
+              <p>Self Care</p>
+            </div>
+            <div>
+              <a href="#"><img src="./images/icon-ellipsis.svg" class="float-right"></a>
+            </div>
+          </div>
+          <p class="time"><span id="selfCareCurrent"></span>hrs</p>
+          <p class="smaller"><span class="last"></span> - <span id="selfCarePrevious"></span>hrs</p>       
+        </div>
+      </div>
+
+    </div>
+  </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://www.github.com/ksmacleod99" target="_blank">Kelly MacLeod</a>.
+  </div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+</html>
