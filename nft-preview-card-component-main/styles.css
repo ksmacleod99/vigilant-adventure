@@ -58,7 +58,7 @@ a:hover, a:focus {
 
 .image > img{
     width: 100%;
-    height:auto;
+    height:50%;
     transition: .5s ease;
     backface-visibility: hidden;
     opacity: 1;
@@ -93,6 +93,12 @@ a:hover, a:focus {
     display:flex;
     width: 100%;
     justify-content: space-between;
+}
+.icon {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    padding-right: 5px;
 }
 
 .eth {
