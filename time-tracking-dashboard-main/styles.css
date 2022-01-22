@@ -131,6 +131,10 @@ li:not(:last-child) {
     color: hsl(235, 45%, 61%);
 }
 
+.tab > img {
+    position: relative;
+    top: -5px;
+}
 
 .work{
     background-color:hsl(15, 100%, 70%);
@@ -194,6 +198,7 @@ li:not(:last-child) {
         min-width: 50%;
         margin: 0;
         line-height: .8;
+        font-size: 30px;
     }
     .smaller{
         min-width: 50%;
