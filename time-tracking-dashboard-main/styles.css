@@ -95,6 +95,7 @@ li:not(:last-child) {
     justify-content: space-between;
     width:100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -114,13 +115,15 @@ li:not(:last-child) {
     font-size:14px;
     font-weight: 300;
     margin-bottom: 0;
-    color:hsl(236, 100%, 87%)
+    color:hsl(236, 100%, 87%);
+    min-width: 100%;
 }
 
 .time {
     font-size: 40px;
     font-weight:300;
     margin:0;
+    min-width: 100%;
 }
 
 .lastWeek {
@@ -154,3 +157,51 @@ li:not(:last-child) {
     font-weight: 300;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    .grid {
+        display: block;
+        max-width: 90%;
+    }
+    .profile {
+        display: flex;
+        padding: 0;
+        align-items: center;
+    }
+    .avContainer {
+        margin: 0.8rem;
+    }
+    .heading {
+        margin: 0 0.8rem 0 0.8rem;
+    }
+    li {
+        display: inline;
+        padding: 1rem;
+    }
+    .dateFilters{
+        padding: 10px;
+    }
+    .inner{
+        padding: 0 1em 1em 1em;
+    }
+    .name {
+        margin: 0;
+    }
+    .time {
+        min-width: 50%;
+        margin: 0;
+        line-height: .8;
+    }
+    .smaller{
+        min-width: 50%;
+    }
+    .wrapper > .smaller {
+        text-align: right;
+    }
+    .tab {
+        height: 40px;
+    }
+}
