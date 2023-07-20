@@ -1,34 +1,41 @@
+//declare the data so it is available globally
+let insults;
+
 //fetch the data
-async function populate(){
-    //TODO: initialize repo in Github and use file path for json for request. Local load causes CORS error. 
-    const request = new Request('./quotes.json');
-    const response = await fetch(request);
-    const insults = await response.json();
-
-    populateInsult(insults);
-    populateCitation(insults);
-
-    
+function loadData(){
+    fetch("./quotes.json")
+    .then((response) => response.json())
+    .then((data) => {
+        insults = data;
+        getInsults();
+    })
+    .catch((error)=> {
+        console.error("Error fetching JSON:", error)
+    });
 }
 
-//declare where the data should go on page load
-
-function populateInsult(obj){
-    const quotes = obj.quotes;
+function getInsults(){ //select random item from the "quotes" array in the JSON
+    if (!insults || !insults.quotes){
+        console.error("json data is not an array and does not contain an array"); //it's an object, but still
+        return null;
+    }
+    const quotes = insults.quotes;
     const random = Math.floor(Math.random() * quotes.length);
-    const insult = document.createElement('p');
-    const citation = document.createElement('p');
+    return quotes[random];
 
-    insult.textContent = random.body;
-    citation.textContent = random.citation;
+    //TODO:
+    //write same to the DOM on page load
+    //V2: seperate "body" and "citation" in each object
 
-    HTMLFormControlsCollection.log(insult)
-} 
+}
 
-populate();
-//select random item from array
-//write same to the DOM on page load
+loadData();
 
-//onClick of button
-//select random item from array
+const randomQuote = getInsults();
+console.log(randomQuote);
+
+
+//TODOs:
+//onClick of "another" button
+//select new random item from array
 //write same to the DOM
