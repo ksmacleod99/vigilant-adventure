@@ -16,32 +16,19 @@ function loadData(){
 
 function getInsult(){ //function that selects random item from the "quotes" array in the JSON
    if (!insults || !insults.quotes){ //if we cannot find "insults" or "insults.quotes", 
-        console.error("json data is not an array and does not contain an array"); //then throw an error; it's an object, but still
+        console.error("JSON data is not an array and does not contain an array"); //then throw an error; it's an object, but still
         return null; //and return null
     } 
     const quotes = insults.quotes; //declare insults.quotes as my data source
     const random = Math.floor(Math.random() * quotes.length); //get a random quote
-    //return quotes[random]; //and return the random quote when the function is called
-    var body = JSON.stringify(quotes[random].body);
-    var citation = JSON.stringify(quotes[random].citation);
+    var body = JSON.stringify(quotes[random].body).replace(/['"]+/g, ''); //make the body a string and repace the double quotes with nothing
+    var citation = JSON.stringify(quotes[random].citation).replace(/['"]+/g, ''); //make the  citation a string and repace the double quotes with nothing
 
-    const placeholder = document.getElementById("placeholder");
-    const quoteText = document.createElement("p");
-    quoteText.textContent = body;
-    placeholder.appendChild(quoteText);
+    const placeholder = document.getElementById("placeholder"); //slide it into the element with id "placeholder"
+    placeholder.innerHTML = body;
 
     const citeAddy = document.getElementById("citation");  //"citeAddy" for "citation address" since "citation" has already been declared
-    const citeText = document.createElement("p");
-    citeText.textContent = citation;
-    citeAddy.appendChild(citeText);
+    citeAddy.innerHTML = citation;
 }
 
 loadData();
-/*const randomQuote = getInsults(); //declare randomQuote and initialize it with the output of getInsults
-console.log(randomQuote); */ //console log whatever the getInsults fucntion returns
-
-
-//TODOs:
-//onClick of "another" button
-//select new random item from array
-//write same to the DOM
