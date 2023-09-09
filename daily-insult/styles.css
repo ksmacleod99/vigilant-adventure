@@ -59,6 +59,10 @@ main {
     font-size: 1em;
 }
 
+.about {
+    margin-bottom: 10px;
+}
+
 a {
     color: #252323;
 }

@@ -3,8 +3,6 @@ A vanilla JS portfolio project. Real simple, really just a project to help ease 
 
 
 ## To Dos
-- Add the ability to copy the quote and citation to the user's clipboard
-- Add styles for mobile
 - Accessibility
 
 ## Most important note: 
