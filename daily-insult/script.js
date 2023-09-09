@@ -43,6 +43,6 @@ date.innerHTML = now;
 //Copy
 function copy() {
     const cb = navigator.clipboard;
-    const paragraph = document.getElementById('placeholder');
+    const paragraph = document.getElementById('theInsult');
     cb.writeText(paragraph.innerText).then(() => alert('Insult copied'));
   }

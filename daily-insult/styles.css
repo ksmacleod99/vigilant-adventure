@@ -41,20 +41,29 @@ main {
 }
 
 .quote {
-    font-family: 'Quintessential', cursive;
-    font-size: 9em;
+    font-family: 'IM Fell English SC', cursive;
+    font-size: 5em;
 }
 
 .text {
     font-size: 2em;
 }
+
 .flex {
     display: inline-flex;
     align-items: flex-end;
     margin-bottom: 50px;
 }
 
-a:visited {
+.citation{
+    font-size: 1em;
+}
+
+a {
+    color: #252323;
+}
+
+a:active {
     color: #70798C;
 }
 
@@ -71,4 +80,16 @@ button {
 footer {
     font-size: .75em;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px){
+    .container{
+        max-width: 90%;
+    }
+    .text{
+        font-size: 1.5em;
+    }
+    .quote {
+        font-size: 3em;
+    }
 }

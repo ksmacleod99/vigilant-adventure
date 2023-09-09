@@ -16,13 +16,14 @@
             <div class="about" id="about"><h3 class="center">Quote for <span id="today"></span></h3></div>
             <div class="container" id="quote-box">
                 <div class="flex">
-                    <p class="quote">&ldquo;</p>
-                    <p class="text" id="placeholder"></p>
-                    <p class="quote">&rdquo;</p>
+                    <div><p class="quote">&ldquo;</p></div>
+                    <div><p id="theInsult"><span id="placeholder" class="text"></span> <br>-<span id="citation" class="citation"></span></p></div>
+                    <div><p class="quote">&rdquo;</p></div>
                 </div>
-                <p class="citation">- <span id="citation"></span></p>
-                <i class="fa-regular fa-copy text" onclick="copy()"></i>
-                <button id="another" onclick="getInsult()">Another!</button>
+                <div>
+                    <a href="#" alt="Copy This Quote"><i class="fa-regular fa-copy text" onclick="copy()"></i></a>
+                    <button id="another" onclick="getInsult()">Another!</button>
+                </div>
             </div>
         </main>
         <footer class="center">  Kelly MacLeod &copy; 2023 | <a href="https://github.com/ksmacleod99/vigilant-adventure/tree/main/daily-insult">View in Github</a></footer>
