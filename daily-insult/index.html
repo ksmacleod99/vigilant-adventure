@@ -13,7 +13,7 @@
     <body>
         <main>
             <div class="header" id="header"><h1 class="center">Daily Shakespearean Insults</h1></div>
-            <div class="about" id="about"><p class="center">Quote for <span id="today"></span></p></div>
+            <div class="about" id="about"><h3 class="center">Quote for <span id="today"></span></h3></div>
             <div class="container" id="quote-box">
                 <div class="flex">
                     <p class="quote">&ldquo;</p>
@@ -21,11 +21,13 @@
                     <p class="quote">&rdquo;</p>
                 </div>
                 <p class="citation">- <span id="citation"></span></p>
+                <i class="fa-regular fa-copy text" onclick="copy()"></i>
                 <button id="another" onclick="getInsult()">Another!</button>
             </div>
         </main>
         <footer class="center">  Kelly MacLeod &copy; 2023 | <a href="https://github.com/ksmacleod99/vigilant-adventure/tree/main/daily-insult">View in Github</a></footer>
         
+        <script src="https://kit.fontawesome.com/3b1f66acfd.js" crossorigin="anonymous"></script>
         <script src="script.js" async defer></script>
     </body>
 </html>

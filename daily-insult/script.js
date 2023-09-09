@@ -1,4 +1,4 @@
-//declare the data so it is available globally
+//declare the Insult data so it is available globally
 let insults;
 
 //fetch the data
@@ -33,11 +33,16 @@ function getInsult(){ //function that selects random item from the "quotes" arra
 
 loadData();
 
-// Begin Functions for date
+// Date
 let today = new Date(); //new date object
-var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }; //format options
-
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }; //format options
 const now = today.toLocaleDateString('en-US', options); //I just want the date, please.
-
 const date = document.getElementById("today");
 date.innerHTML = now;
+
+//Copy
+function copy() {
+    const cb = navigator.clipboard;
+    const paragraph = document.getElementById('placeholder');
+    cb.writeText(paragraph.innerText).then(() => alert('Insult copied'));
+  }

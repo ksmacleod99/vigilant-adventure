@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #263133;
-    color: #fff;
+    background-color: #DAD2BC;
+    color: #252323;
     font-family: 'Poppins', 'Tahoma', sans-serif;
     font-size: 18px;
 }
@@ -16,14 +16,18 @@ h1 {
     font-size: 3em;
 }
 
+h3 {
+    font-weight: regular;
+}
+
 main {
     margin: 10% auto; 
 }
 
 .container {
     border-radius: 12px;
-    border: 4px solid white;
-    background: linear-gradient(145deg, rgba(255,255,255, 0.4), rgba(255, 255, 255, 0.1));
+    border: 4px solid #A99985;
+    background-color: #F5F1ED;
     max-width: 50%;
     padding: 1em;
     text-align: center;
@@ -51,14 +55,14 @@ main {
 }
 
 a:visited {
-    color: #fff;
+    color: #70798C;
 }
 
 button {
-    background: linear-gradient(215deg, #263133, rgba(255, 255, 255, 0.2)); 
-    color: #fff;
-    border: 1px solid white;
-    border-radius: 12px;;
+    background-color: #DAD2BC; 
+    color: #252323;
+    border: 2px solid #A99985;
+    border-radius: 8px;
     font-size: 1.1em;
     padding: 5px;
     margin: 10px;
