@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Daily Shakespearean Insults</title>
@@ -13,7 +13,7 @@
     <body>
         <main>
             <div class="header" id="header"><h1 class="center">Daily Shakespearean Insults</h1></div>
-            <div class="about" id="about"><h3 class="center">Quote for <span id="today"></span></h3></div>
+            <div class="about" id="about"><h2 class="center">Quote for <span id="today"></span></h2></div>
             <div class="container" id="quote-box">
                 <div class="flex">
                     <div><p class="quote">&ldquo;</p></div>
@@ -21,7 +21,7 @@
                     <div><p class="quote">&rdquo;</p></div>
                 </div>
                 <div>
-                    <a href="#" alt="Copy This Quote"><i class="fa-regular fa-copy text" onclick="copy()"></i></a>
+                    <a href="#" alt="Copy This Quote"><i class="fa-regular fa-copy text" onclick="copy()"></i><span class="sr-only">Copy This Quote</span></a>
                     <button id="another" onclick="getInsult()">Another!</button>
                 </div>
             </div>
